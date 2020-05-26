@@ -95,9 +95,7 @@ class App extends Component {
 					fetch('https://sleepy-harbor-81108.herokuapp.com/image', {
 						method: 'PUT',
 						headers: { 'Content-Type': 'application/json' },
-						body: JSON.stringify({
-							id: this.state.user.id
-						})
+						body: JSON.stringify({ id: this.state.user.id })
 					})
 						.then(response => response.json())
 						.then(count => {
