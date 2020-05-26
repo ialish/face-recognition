@@ -87,9 +87,7 @@ class App extends Component {
 		fetch('https://sleepy-harbor-81108.herokuapp.com/imageurl', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({
-				input: this.state.input
-			})
+			body: JSON.stringify({ input: this.state.input })
 		})
 			.then(response => response.json())
 			.then(response => {
